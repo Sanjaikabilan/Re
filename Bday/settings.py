@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-tjj%64z$4a=tc76pf-4p3yh8*vsd8#jvxj52t%c#a7zsq1j#8a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -151,6 +151,6 @@ EMAIL_HOST_PASSWORD = "gfdxdflxhduzafyv"
 
 #celery
 
-CELERY_BROKER_URL = 'amqps://glenlsgt:imEGHS3iv-sG8T2k1ghQ5NXY_nfz8m4c@fly.rmq.cloudamqp.com/glenlsgt'
+CELERY_BROKER_URL = 'amqp://localhost'
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
